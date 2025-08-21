@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Pro - Inicio</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <h1 class="logo">Eventos Pro</h1>
+  </header>
+
+  <!-- Menú lateral -->
+  <nav id="side-menu" class="side-menu">
+    <button class="close-btn" onclick="toggleMenu()">✕</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="trabaja.html">Trabaja con Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
+         alt="Evento con luces" class="hero-img">
+    <div class="hero-overlay">
+      <h2>Haz de tu evento algo <span>inolvidable</span></h2>
+      <p>Organizamos bodas, fiestas, conferencias y experiencias únicas.</p>
+      <div class="hero-actions">
+        <input type="text" placeholder="Busca tu evento ideal...">
+        <button class="btn-search">Buscar →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección rápida de categorías -->
+  <section class="categorias">
+    <h3>Especialidades</h3>
+    <div class="cat-grid">
+      <div class="cat-item">🎉 Bodas</div>
+      <div class="cat-item">🎤 Conferencias</div>
+      <div class="cat-item">🎶 Conciertos</div>
+      <div class="cat-item">🥂 Fiestas Privadas</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

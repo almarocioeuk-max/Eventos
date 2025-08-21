@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Eventos Pro</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <h1 class="logo">Eventos Pro</h1>
+  </header>
+
+  <nav id="side-menu" class="side-menu">
+    <button class="close-btn" onclick="toggleMenu()">✕</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="trabaja.html">Trabaja con Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="categorias">
+      <h3>Contáctanos</h3>
+      <form class="form">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Escribe tu mensaje" rows="4"></textarea>
+        <button type="submit" class="btn-search">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
