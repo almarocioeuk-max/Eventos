@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<main>
+
   <header class="header">
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <h1 class="logo">Eventos Pro</h1>
@@ -25,18 +27,27 @@
     </ul>
   </nav>
 
-  <main>
-    <section class="categorias">
-      <h3>Contáctanos</h3>
-      <form class="form">
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="Escribe tu mensaje" rows="4"></textarea>
-        <button type="submit" class="btn-search">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section class="hero-full">
+    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80" alt="Contacto" class="hero-img">
+    <div class="hero-content">
+      <h2>¿Nos <span>contactás?</span></h2>
+      <p>Escribinos y te respondemos a la brevedad.</p>
+      <button class="btn-primary">Enviar un mensaje</button>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+<br>
+<br>
+
+  <section class="form-section">
+    <form class="form">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Tu mensaje" rows="4"></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
