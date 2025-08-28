@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<main>
+  
   <header class="header">
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <h1 class="logo">Eventos Pro</h1>
@@ -25,18 +27,25 @@
     </ul>
   </nav>
 
-  <main>
-    <section class="categorias">
-      <h3>Tipos de Eventos</h3>
-      <div class="cat-grid">
-        <div class="cat-item"><img src="https://images.unsplash.com/photo-1529633248432-2207d1a17f5d?auto=format&fit=crop&w=600&q=80"><p>Bodas</p></div>
-        <div class="cat-item"><img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde16?auto=format&fit=crop&w=600&q=80"><p>Conferencias</p></div>
-        <div class="cat-item"><img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=600&q=80"><p>Conciertos</p></div>
-        <div class="cat-item"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80"><p>Fiestas Privadas</p></div>
-      </div>
-    </section>
-  </main>
+  <section class="hero-full">
+    <img src="https://cdn0.casamientos.com.ar/vendor/7395/3_2/1280/jpg/280617-pista_7_67395.jpeg" alt="Collage eventos" class="hero-img">
+    <div class="hero-content">
+      <h2>Tipos de <span>eventos</span></h2>
+      <p>Elegí entre nuestras categorías destacadas.</p>
+      <button class="btn-primary">Explorar eventos</button>
+    </div>
+  </section>
+  
+  <br>
+  <br>
 
-  <script src="script.js"></script>
+  <section class="cat-grid">
+    <div class="cat-item"><img src="https://cardswith.love/img/ybc_blog/post/bride-groom-near-wedding-arch.jpg"><p>Bodas</p></div>
+    <div class="cat-item"><img src="https://cabify.com/_blogs-assets/images/empresas/main_exito-conferencias.jpg"><p>Conferencias</p></div>
+    <div class="cat-item"><img src="https://www.argentina.gob.ar/sites/default/files/trueno-show.jpeg"><p>Conciertos</p></div>
+    <div class="cat-item"><img src="https://offloadmedia.feverup.com/bairessecreta.com/wp-content/uploads/2023/10/22183336/fiestas-halloween-bruce.jpg"><p>Fiestas</p></div>
+  </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
