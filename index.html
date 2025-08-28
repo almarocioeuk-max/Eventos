@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Header -->
   <header class="header">
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <h1 class="logo">Eventos Pro</h1>
   </header>
 
-  <!-- Menú lateral -->
   <nav id="side-menu" class="side-menu">
     <button class="close-btn" onclick="toggleMenu()">✕</button>
     <ul>
@@ -30,31 +30,50 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
-         alt="Evento con luces" class="hero-img">
-    <div class="hero-overlay">
-      <h2>Haz de tu evento algo <span>inolvidable</span></h2>
-      <p>Organizamos bodas, fiestas, conferencias y experiencias únicas.</p>
-      <div class="hero-actions">
-        <input type="text" placeholder="Busca tu evento ideal...">
-        <button class="btn-search">Buscar →</button>
+  <main>
+    <section class="hero-full">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80"
+        alt="Evento con luces" class="hero-img">
+      <div class="hero-content">
+        <h2>Haz de tu evento algo <span>inolvidable</span></h2>
+        <p>Desde bodas hasta fiestas temáticas y conferencias corporativas.</p>
+        <button class="btn-primary">Ver nuestros eventos</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sección rápida de categorías -->
-  <section class="categorias">
-    <h3>Especialidades</h3>
-    <div class="cat-grid">
-      <div class="cat-item">🎉 Bodas</div>
-      <div class="cat-item">🎤 Conferencias</div>
-      <div class="cat-item">🎶 Conciertos</div>
-      <div class="cat-item">🥂 Fiestas Privadas</div>
-    </div>
-  </section>
+    <section class="features">
+      <h2>Nuestros Servicios</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <img src="https://www.vinccihoteles.com/uploads/cms_apps/imagenes/organizadoras-eventos.jpg"
+            alt="Planificación de eventos">
+          <h3>Planificación</h3>
+          <p>Organizamos tu evento de principio a fin, cuidando cada detalle.</p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="https://estaticosgn-cdn.deia.eus/clip/8663a0ba-42e6-4c9a-abb3-3e343ea36400_16-9-discover-aspect-ratio_default_0.jpg"
+            alt="Bodas y celebraciones">
+          <h3>Bodas</h3>
+          <p>Hacemos de tu boda un día inolvidable con momentos únicos.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://fiestasnacionales.org/img/GestionFiesta/baradero-1.jpg" alt="Conciertos y fiestas">
+          <h3>Conciertos</h3>
+          <p>Producción y logística completa para shows y festivales.</p>
+        </div>
+        <div class="feature-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqiNduBNZjSucY1Pe11BYR7mYp3QYsvLtug&s"
+            alt="Eventos empresariales">
+          <h3>Corporativos</h3>
+          <p>Eventos empresariales diseñados para impactar a tus clientes.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
+
 </html>
