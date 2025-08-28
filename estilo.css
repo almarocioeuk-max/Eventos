@@ -3,149 +3,337 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Revalia&display=swap');
 
+body,
+h1,
+h2,
+h3,
+p,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Oswald', sans-serif, bold;
-    background: #0d0d0d;
-    color: white;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #181126;
-    padding: 10px 15px;
-  }
-  
-  .logo {
-    font-family: 'Revalia';
-    font-weight: bold;
-    color: #c24237;
-    font-size: 30px;
-  }
-  
-  .menu-btn {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #c24237;
-    cursor: pointer;
-  }
-  
-  /* Menú lateral */
-  .side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 220px;
-    height: 100%;
-    background: #372263;
-    padding: 20px;
-    transition: left 0.3s;
-    z-index: 1000;
-  }
-  .side-menu.open {
-    left: 0;
-  }
-  .side-menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  .side-menu li {
-    margin: 15px 0;
-  }
-  .side-menu a {
-    color: #c24237;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  .close-btn {
-    background: none;
-    border: none;
-    color: #c24237;
-    font-size: 22px;
-    float: right;
-    cursor: pointer;
-  }
-  
-  /* Hero */
-  .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  .hero-img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70vh;
-    box-sizing: border-box;
-    background: rgba(13,13,13,0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  .hero h2 {
-    font-family: 'Revalia', cursive;
-    font-size: 28px;
-    color: #fff;
-  }
-  .hero h2 span {
-    color: #63732c;
-  }
-  .hero p {
-    margin: 10px 0 20px;
-    color: #ddd;
-  }
-  .hero-actions {
-    display: flex;
-    gap: 8px;
-  }
-  .hero-actions input {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    flex: 1;
-  }
-  .btn-search {
-    background: #c24237;
-    border: none;
-    padding: 10px 16px;
-    color: white;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  /* Categorías */
-  .categorias {
-    padding: 20px;
-    text-align: center;
-  }
-  .categorias h3 {
-    font-family: 'Revalia', cursive;
-    color: #63732c;
-  }
-  .cat-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    margin-top: 15px;
-  }
-  .cat-item {
-    background: #372263;
-    padding: 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    color: #c24237;
-  }
+  font-family: 'Roboto', sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+h2,
+h3 {
+  font-family: 'Revalia', cursive;
+  color: #63732c;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181126;
+  padding: 10px 15px;
+}
+
+.logo {
+  font-family: 'Revalia', cursive;
+  font-size: 22px;
+  color: #F26f63;
+}
+
+.menu-btn,
+.close-btn {
+  background: none;
+  border: none;
+  color: #F26f63;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #260c40;
+  padding: 20px;
+  transition: left .3s;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 15px 0;
+}
+
+.side-menu a {
+  color: #F26f63;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero-full {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background: rgba(13, 13, 13, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+}
+
+.hero-content h2 span {
+  color: #63732c;
+}
+
+.hero-content p {
+  margin: 10px 0 20px;
+  color: #ddd;
+}
+
+.btn-primary {
+  background: #F26f63;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.features {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #181126;
+  color: #fff;
+}
+
+.features h2 {
+  font-family: 'Revalia', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #F26f63;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-item {
+  background: #260c40;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-family: 'Revalia', cursive;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #63732c;
+}
+
+.feature-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #f5f5f5;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 20px;
+}
+
+.cat-item {
+  background: #181126;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: #F26f63;
+}
+
+.cat-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.form button {
+  background: #F26f63;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero de Sobre Nosotros */
+.about-hero {
+  background-image: url("https://cdnwebsite.databox.com/wp-content/uploads/2020/12/01062702/about-us-page-examples.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.about-hero h1 {
+  font-family: 'Revalia', cursive;
+  font-size: 2.5rem;
+  color: #181126;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Grid de contenido */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 1.5rem;
+  background-color: #181126;
+}
+
+.about-item {
+  background: #260c40;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.about-item h3 {
+  font-family: 'Revalia', cursive;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #63732c;
+}
+
+.about-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #f5f5f5;
+}
+
+/* CTA */
+.cta {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.cta h2 {
+  font-family: 'Revalia', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #F26f63;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #63732c;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #F26f63;
+}
