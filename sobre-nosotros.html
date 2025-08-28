@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Revalia:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- Menú hamburguesa -->
   <header class="header">
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
     <h1 class="logo">Eventos Pro</h1>
@@ -25,15 +27,41 @@
     </ul>
   </nav>
 
-  <main>
-    <section class="hero">
-      <img src="https://images.unsplash.com/photo-1555255707-c07966088b80?auto=format&fit=crop&w=1400&q=80" class="hero-img" alt="Equipo organizando evento">
-      <div class="hero-overlay">
-        <h2>Nuestra Historia</h2>
-        <p>Somos un equipo apasionado que combina creatividad, organización y detalle para hacer de cada evento algo inolvidable.</p>
-      </div>
-    </section>
-  </main>
+  <!-- Sección principal -->
+  <section class="about-hero">
+    <h1>Quiénes Somos</h1>
+    <p>Transformamos tus ideas en experiencias inolvidables</p>
+  </section>
+
+  <!-- Misión, visión, valores -->
+  <section class="about-grid">
+    <div class="about-item">
+      <img src="https://www.jauja.com.ar/static/app_web/img/nosotros01.jpg" alt="Nuestro equipo">
+      <h3>Nuestra Historia</h3>
+      <p>Con más de 10 años en el sector, hemos organizado cientos de eventos sociales, corporativos y culturales, trabajando con pasión en cada detalle.</p>
+    </div>
+    <div class="about-item">
+      <img src="https://dianadiazz.com/wp-content/uploads/2020/07/misi%C3%B3n.jpg" alt="Misión">
+      <h3>Misión</h3>
+      <p>Crear experiencias únicas que superen las expectativas de nuestros clientes, cuidando la innovación, la creatividad y la excelencia.</p>
+    </div>
+    <div class="about-item">
+      <img src="https://static.vecteezy.com/system/resources/previews/010/925/477/non_2x/business-mission-mission-statement-business-goals-and-philosophy-company-vision-core-values-customer-engagement-loyalty-and-satisfaction-flat-design-modern-illustration-vector.jpg" alt="Visión">
+      <h3>Visión</h3>
+      <p>Ser la empresa líder en organización de eventos en Latinoamérica, reconocida por nuestro compromiso y creatividad.</p>
+    </div>
+    <div class="about-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIyoERj-cndLe3pBrJXqw5x9KOHJ-QtvcMw&s" alt="Valores">
+      <h3>Valores</h3>
+      <p>Trabajo en equipo, responsabilidad, innovación, empatía y profesionalismo nos definen en cada evento que realizamos.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>¿Querés que organicemos tu próximo evento?</h2>
+    <a href="contacto.html" class="btn-primary">Contáctanos</a>
+  </section>
 
   <script src="script.js"></script>
 </body>
