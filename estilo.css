@@ -3,14 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Revalia&display=swap');
 
-body,
-h1,
-h2,
-h3,
-p,
-button,
-input,
-textarea {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -337,3 +330,4 @@ h3 {
 .btn-primary:hover {
   background: #F26f63;
 }
+
